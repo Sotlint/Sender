@@ -1,0 +1,27 @@
+<body>
+<header>
+  <div class="name" >
+    <img class="logo" src="../assets/logo.png" alt="Лого">
+    <div class="name">Sender</div>
+  </div>
+  <div >
+    <button  class="profile-button" >Профиль</button>
+  </div>
+</header>
+
+<main>
+<div class="mainbox">
+  <div class="menu">
+    <button class="btn-menu" (click)="onDashboard()">Дашборд</button>
+    <button class="btn-menu"(click)="onContacts()">Контакты</button>
+    <button class="btn-menu"(click)="onEmail()">Email рассылка</button>
+    <button class="btn-menu" (click)="onSms()">Sms рассылка</button>
+  </div>
+  <div class ="workspace">
+  <router-outlet></router-outlet>
+  </div>
+</div>
+</main>
+
+</body>
+

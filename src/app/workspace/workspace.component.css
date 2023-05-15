@@ -1,0 +1,71 @@
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  background-color: #262626;
+  padding: 5px;
+  box-shadow: 0px 1px 10px rgba(255, 255, 255, 0.35);
+  z-index: 9999;
+  color: #ffffff;
+
+}
+
+.logo{
+  flex-wrap: wrap;
+  width: 50px;
+  height: 50px;
+}
+.name {
+  transition: color 0.3s, color 0.3s;
+  margin-left: 5%;
+  display: flex;
+  justify-content: normal;
+  align-items: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+}
+
+.profile-button {
+  flex-wrap: wrap;
+  background-color: #ed3e3e;
+  color: #ffffff;
+}
+
+button {
+  flex-wrap: wrap;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu{
+  display: flex;
+  padding-bottom: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
+  flex-direction: column;
+}
+
+.btn-menu
+{
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.mainbox{
+  display: flex;
+  flex-direction: row;
+}
+
+.workspace{
+  display: flex;
+  width: 100%;
+background-color: #fafbfc;
+}
