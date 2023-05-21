@@ -14,11 +14,17 @@ import {ContactsComponent} from "./workspace/contacts/contacts.component";
 import {DashboardComponent} from "./workspace/dashboard/dashboard.component";
 import {EmailComponent} from "./workspace/email/email.component";
 import {SmsComponent} from "./workspace/sms/sms.component";
+import {MatInputModule} from "@angular/material/input";
+import {MatDatepickerModule} from "@angular/material/datepicker";
+import { MatMomentDateModule } from '@angular/material-moment-adapter';
+import {MatCheckboxModule} from "@angular/material/checkbox";
+
 
 
 
 @NgModule({
   declarations: [
+
     WorkspaceComponent,
     AppComponent,
     HomeComponent,
@@ -30,12 +36,15 @@ import {SmsComponent} from "./workspace/sms/sms.component";
     SmsComponent
   ],
   imports: [
-
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
-    MatDialogModule
+    MatDialogModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatMomentDateModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
