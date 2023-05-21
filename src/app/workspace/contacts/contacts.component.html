@@ -1,1 +1,32 @@
-<p>contacts works!</p>
+
+<label class="topic">Загрузка базы контактов</label>
+
+  <div class="box">
+ <div class="upload-controls">
+   <input type="file" accept=".csv" id="fileInput" style="display: none;" (change)="ChangeInput($event)">
+   <button class="button" (click)="selectFile()">Выбрать файл</button>
+ </div>
+  <div (drop)="onFileDropped($event)" (dragover)="onDragOver($event)" (dragleave)="onDragLeave($event)" class="drop-zone">
+    <label>Или перетащите файл сюда</label>
+  </div>
+
+  </div>
+
+<label class="topic">Загруженные контакты</label>
+
+  <table class="contact-list">
+    <thead>
+    <tr>
+      <th>Имя</th>
+      <th>Email</th>
+      <th>Телефон</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let contact of contacts">
+      <td>{{ contact.name }}</td>
+      <td>{{ contact.email }}</td>
+      <td>{{ contact.phone }}</td>
+    </tr>
+    </tbody>
+  </table>

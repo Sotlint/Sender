@@ -10,6 +10,10 @@ import { AuthorizationComponent } from './home/authorization/authorization.compo
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {FormsModule} from "@angular/forms";
 import {MatDialogModule} from "@angular/material/dialog";
+import {ContactsComponent} from "./workspace/contacts/contacts.component";
+import {DashboardComponent} from "./workspace/dashboard/dashboard.component";
+import {EmailComponent} from "./workspace/email/email.component";
+import {SmsComponent} from "./workspace/sms/sms.component";
 
 
 
@@ -20,10 +24,13 @@ import {MatDialogModule} from "@angular/material/dialog";
     HomeComponent,
     RegistrationComponent,
     AuthorizationComponent,
-
-
+    ContactsComponent,
+    DashboardComponent,
+    EmailComponent,
+    SmsComponent
   ],
   imports: [
+
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,

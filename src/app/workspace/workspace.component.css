@@ -48,24 +48,39 @@ button {
 .menu{
   display: flex;
   padding-bottom: 100%;
-  padding-left: 2%;
-  padding-right: 2%;
+  padding-left: 1%;
+  padding-right: 1%;
   flex-direction: column;
 }
 
 .btn-menu
-{
+{box-shadow: 0px 1px 10px rgba(255, 255, 255, 0.35);
+  transition: background-color 0.3s, color 0.3s;
   margin-bottom: 5%;
   margin-top: 5%;
+  padding: 15px 20px;
+  background-color: #dddee591;
+  border-radius: 10px;
 }
 
+.btn-menu:hover{
+  background-color: rgba(243, 243, 243, 0.91);
+}
+.btn-menu.active{
+  background-color: #ed3e3e;
+  color: white;
+}
 .mainbox{
   display: flex;
   flex-direction: row;
 }
 
 .workspace{
+  padding-left: 1%;
+  padding-top: 1%;
   display: flex;
   width: 100%;
-background-color: #fafbfc;
+  background-color: #fafbfc;
+  flex-direction: column;
+  align-items: flex-start;
 }
